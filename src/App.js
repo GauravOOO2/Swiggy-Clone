@@ -1,24 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter,
+  Outlet,
+  RouterProvider
+} from "react-router-dom";
+import Signin from "./components/Signin";
+// import Cart from "./components/Cart";
+import { lazy, Suspense } from "react";
+
+import Header from "./components/Header";
+// import Body from "./components/Body";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+// import CardsData from "./components/CardsData";
+
+const Cart = lazy(()=>import('./components/Cart'))
+const CardsData = lazy(()=>import('./components/CardsData'))
+const Body = lazy(()=>import('./components/Body')  )
+
+
+
+
+const Applayout = ()=>{
+  return(
+    <div>
+    <Header />
+    <Outlet />
+  </div>
+  )
+  }
+
+const appRouter = createBrowserRouter([
+  {
+    path:'/',
+    element:<Applayout />,
+    children:[{
+      path:'/',
+      element:<Suspense fallback={'let me fetch someting delicious for u.....'} > <Body /></Suspense>
+    },
+    {
+      path:'/Signin',
+      element:<Signin />
+    },
+    {
+      path:'/Cart',
+      element: <Suspense fallback={<h1>Homie wait let it Load........</h1>} ><Cart /></Suspense> 
+    },
+    {
+      path:'/CardData/:id',
+      element: <Suspense fallback={ <h1> Too hungry? hold on ill let u order something..... </h1> } > <CardsData /> </Suspense>
+    }
+  ]
+  }
+])
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}  >
+    <RouterProvider router={appRouter} />
+    </Provider>
   );
 }
 
