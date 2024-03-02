@@ -18,12 +18,13 @@ const Cardlist = () => {
   return (
     <div className='flex boarder border-gray-100 overflow-x-scroll  ' >
       {
-        res.map((data) => (
+        res?.map((data) => (
           data?.info?.avgRating >= 4.4
             ? <SpecialCard
               name={data?.info?.name}
               location={data?.info?.locality}
               image={data?.info?.cloudinaryImageId}
+              id={data?.info?.id}
             />
             : <Cards
               name={data?.info?.name}

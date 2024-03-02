@@ -5,8 +5,11 @@ import { updateCaresData } from '../utils/resSlice'
 import resSlice from '../utils/resSlice'
 import { useParams } from 'react-router-dom'
 import useFetchCardsData from '../hooks/useFetchCardsData'
+import { additem } from '../utils/cartSlice'
 
 const CardsData = () => {
+
+  const dispatch = useDispatch()
 
   const resData = useSelector((store) => store?.res?.resData)
   console.log(resData);
@@ -20,7 +23,9 @@ const CardsData = () => {
 
   useFetchCardsData();
 
-
+  const handleadditem = (data)=>{
+    dispatch(additem(data))
+  }
 
   return (
     <div>
@@ -28,11 +33,11 @@ const CardsData = () => {
       <p className="text-xl font-semibold  " > {resData?.name} </p>
       <p className="text-gray-600" > {resData?.cuisines?.join(", ")} </p>
       
-      <div>Recommended ({resMenu.length}) </div>
+      <div>Recommended ({resMenu?.length}) </div>
       </div>
       <div className=' p-10 m-10  ' >
         {
-          resMenu.map((data, index) => (
+          resMenu?.map((data, index) => (
             <div key={index} className='border-4 border-gray-200 rounded-lg p-4'>
               <div className='p-6 m-6 pb-10 bg-white shadow-lg rounded-lg '>
                 <div className='flex justify-between' >
@@ -46,7 +51,7 @@ const CardsData = () => {
                   alt='Menu pic'
                 />
                 </div>
-                <button className='mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600' > 
+                <button onClick={()=>handleadditem(data)} className='mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600' > 
                 +Add 
                 </button>
 
