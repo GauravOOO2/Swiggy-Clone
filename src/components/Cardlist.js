@@ -16,7 +16,7 @@ const Cardlist = () => {
 
 
   return (
-    <div className='flex boarder border-gray-100 overflow-x-scroll  ' >
+    <div className='flex flex-wrap boarder border-gray-100 ' >
       {
         res?.map((data) => (
           data?.info?.avgRating >= 4.4
