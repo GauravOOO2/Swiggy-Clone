@@ -13,9 +13,9 @@ const Header = () => {
             </Link>
         </div>
         <div className='m-2 p-2 ' >
-        <button className='p-2' >  <Link to='/' > Home</Link> </button>
-        <button className='p-2' > <Link to='/Signin'> Sign In </Link></button>
-      <button className='p-2' >  <Link to='/Cart' > Cart</Link> </button>
+        <button className=' text-lg font-serif text-amber-600 p-2' >  <Link to='/' > Home</Link> </button>
+        <button className=' text-lg font-serif text-amber-600 p-2' > <Link to='/Signin'> Sign In </Link></button>
+      <button className=' text-lg font-serif text-amber-600 p-2' >  <Link to='/Cart' > Cart</Link> </button>
    
         </div>
    

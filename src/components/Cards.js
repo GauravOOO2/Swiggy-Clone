@@ -16,10 +16,11 @@ const Cards = (props) => {
             </Link>
         </div>
         <div>
-        <h2 className='text-xl font-semibold text-gray-800 hover:text-red-600 transition duration-300 cursor-pointer	 '>Name: {name}</h2>
+        <h2 className='text-xl font-semibold text-gray-800 hover:text-red-600 transition duration-300 cursor-pointer	pl-2 '>
+          Name: {name}</h2>
 
         
-        <p className='text-gray-600 mt-1' >location: {location}</p>
+        <p className='text-gray-600 mt-1 pl-2.5 ' >location: {location}</p>
         </div>
       
     </div>
