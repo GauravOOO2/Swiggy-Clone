@@ -6,18 +6,20 @@ const Cards = (props) => {
 
 
   return (
-    <div className=' w-40 h-60 m-5 bg-gray-200 hover:border-2 border-solid border-black-800 cursor-pointer ' >
-        <div w-40 h-20 p-1 >
+    <div className='w-64 h-72 mx-5  my-8 bg-white shadow-md rounded-lg overflow-hidden ' >
+        <div className='' >
           <Link to={'/CardData/'+id} >
-            <img className=''
+            <img className=' h-48 w-full object-cover '
             src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${image}`}
             alt='Restaurents'
             />
             </Link>
         </div>
         <div>
-        Name: {name}
-    location: {location}
+        <h2 className='text-xl font-semibold text-gray-800 hover:text-red-600 transition duration-300 cursor-pointer	 '>Name: {name}</h2>
+
+        
+        <p className='text-gray-600 mt-1' >location: {location}</p>
         </div>
       
     </div>
@@ -28,7 +30,7 @@ export const wowCard=(Cardlist)=>{
   return(props)=>{
     return(
       <div className='relative' >
-        <label className='bg-red-800 p-2 absolute z-9 ml-4 rounded-lg' >wow</label>
+        <label className='bg-red-600 text-white py-1 px-3 absolute top-2 left-2 z-10 rounded-md text-lg' >Hot</label>
         <Cardlist {...props} />
       </div>
     )

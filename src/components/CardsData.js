@@ -38,7 +38,7 @@ const CardsData = () => {
       <div className=' p-10 m-10  ' >
         {
           resMenu?.map((data, index) => (
-            <div key={index} className='border-4 border-gray-200 rounded-lg p-4'>
+            <div key={index} className=' rounded-lg p-4'>
               <div className='p-6 m-6 pb-10 bg-white shadow-lg rounded-lg '>
                 <div className='flex justify-between' >
                 <p className='text-lg font-semibold' > Name: {data?.card?.info?.name} </p>
