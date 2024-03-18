@@ -23,7 +23,7 @@ const Cart = () => {
           <div className='button_parent'>
             <p className='pb-2' >Clear the Cart:</p>
             <div className='cart_clear_button   ' >
-              <button className='mybutton   ' onClick={() => handleclearcart()} >Clear</button>
+              <button className='mybutton text-white  ' onClick={() => handleclearcart()} >Clear</button>
             </div>
             {/* bg-red-600 text-white p-5 py-1 px-3 absolute top-2 left-2 z-10 rounded-md text-lg */}
           </div>

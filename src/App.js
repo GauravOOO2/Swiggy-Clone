@@ -31,7 +31,7 @@ const Applayout = ()=>{
 const appRouter = createBrowserRouter([
   {
     path:'/',
-    element:<Applayout />,
+    element:<Applayout/>,
     children:[{
       path:'/',
       element:<Suspense fallback={'let me fetch someting delicious for u.....'} > <Body /></Suspense>
