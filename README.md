@@ -6,6 +6,7 @@ Creating Mirror Swiggy application incorporating live APIs and Realtime technolo
 
 ## Tech Stacks used
 
+- Javascript
 - React
 - Redux
 - Tailwind
