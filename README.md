@@ -44,11 +44,11 @@ Go to the project directory
 Install React dependencies
 
 ```bash
-    npm install
+  npm install
 ```
 
 Run the React app following this commands
 
 ```bash
-    npm start
+  npm start
 ```
