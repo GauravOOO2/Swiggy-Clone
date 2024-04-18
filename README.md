@@ -34,7 +34,9 @@ You need to write the following commands on the terminal screen(in vscode) so th
 ```bash
     git clone "https://github.com/GauravOOO2/Swiggy-Clone.git"
 ```
-    
+
+Go to the project directory
+
 ```bash
   cd Swiggy-Clone
 ```
