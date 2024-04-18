@@ -18,6 +18,7 @@ Creating Mirror Swiggy application incorporating live APIs and Realtime technolo
 - Lazy Loading
 - Custom Hooks
 - Higher-Order Components
+- Single Responsibility Principle
 
 
 
@@ -48,5 +49,4 @@ Run the React app following this commands
 
 ```bash
     npm start
-    yarn start
 ```
