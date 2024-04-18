@@ -52,3 +52,29 @@ Run the React app following this commands
 ```bash
   npm start
 ```
+
+
+## Screenshots
+
+Cards List of restaurants
+
+![Cards List of restaurants](https://gauravooo2.github.io/Gaurav_portfolio/Project_images/SwiggyHome.png)
+
+Lazy Loading 
+
+![Lazy Loading](https://gauravooo2.github.io/Gaurav_portfolio/assets/img/swiggy_prog2.png)
+
+Menu Details 
+
+![Menu Details](https://gauravooo2.github.io/Gaurav_portfolio/Project_images/SwiggyMenu.png)
+
+Cart Details
+
+![Cart Details](https://gauravooo2.github.io/Gaurav_portfolio/Project_images/SwiggyCart.png)
+
+
+
+
+
+
+
