@@ -32,7 +32,7 @@ Creating Mirror Swiggy application incorporating live APIs and Realtime technolo
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
 
 ```bash
-    git clone "https://github.com/GauravOOO2/Swiggy-Clone.git"
+git clone "https://github.com/GauravOOO2/Swiggy-Clone.git"
 ```
 
 Go to the project directory
