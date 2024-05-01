@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Swiggy-Clone/static/css/main.20bf2cd6.css",
+    "main.js": "/Swiggy-Clone/static/js/main.34f2f200.js",
+    "static/css/925.648680f2.chunk.css": "/Swiggy-Clone/static/css/925.648680f2.chunk.css",
+    "static/js/925.cbb3e075.chunk.js": "/Swiggy-Clone/static/js/925.cbb3e075.chunk.js",
+    "static/js/200.08bef1ff.chunk.js": "/Swiggy-Clone/static/js/200.08bef1ff.chunk.js",
+    "static/js/455.9fbd03fc.chunk.js": "/Swiggy-Clone/static/js/455.9fbd03fc.chunk.js",
+    "static/js/453.a38ed603.chunk.js": "/Swiggy-Clone/static/js/453.a38ed603.chunk.js",
+    "index.html": "/Swiggy-Clone/index.html",
+    "main.20bf2cd6.css.map": "/Swiggy-Clone/static/css/main.20bf2cd6.css.map",
+    "main.34f2f200.js.map": "/Swiggy-Clone/static/js/main.34f2f200.js.map",
+    "925.648680f2.chunk.css.map": "/Swiggy-Clone/static/css/925.648680f2.chunk.css.map",
+    "925.cbb3e075.chunk.js.map": "/Swiggy-Clone/static/js/925.cbb3e075.chunk.js.map",
+    "200.08bef1ff.chunk.js.map": "/Swiggy-Clone/static/js/200.08bef1ff.chunk.js.map",
+    "455.9fbd03fc.chunk.js.map": "/Swiggy-Clone/static/js/455.9fbd03fc.chunk.js.map",
+    "453.a38ed603.chunk.js.map": "/Swiggy-Clone/static/js/453.a38ed603.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20bf2cd6.css",
+    "static/js/main.34f2f200.js"
+  ]
+}
